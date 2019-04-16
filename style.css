@@ -113,7 +113,11 @@ header {
 
 .product-title
 {
-	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 60px;
+	font-weight: 600;
 	text-transform:uppercase;
 	color: #fff;
 	z-index: 1;
@@ -122,26 +126,20 @@ header {
 
 .product-title:before
 {
+	margin-right: 5px;
 	content: "";
-	position: absolute;
 	width: 55px;
 	height: 1px;
 	background-color: #e21440;
-	top: 50%;
-	left: -60px;
-	transform: translateY(-50%);
 }
 
 .product-title:after
 {
+	margin-left: 5px;
 	content: "";
-	position: absolute;
 	width: 55px;
 	height: 1px;
 	background-color: #e21440;
-	top: 50%;
-	right: -60px;
-	transform: translateY(-50%);
 }
 
 .product-subtitle
@@ -207,17 +205,17 @@ header {
 }
 
 .second-screen-header
-{
+{/*
 	font-weight: 600;
 	font-size: 40px;
 
 	position: relative;
 	text-transform:uppercase;
-	color: #000;
+	color: #000;*/
 	z-index: 1;
 	margin-bottom: 115px;
 }
-
+/*
 .second-screen-header:before
 {
 	content: "";
@@ -240,6 +238,35 @@ header {
 	top: 50%;
 	right: -60px;
 	transform: translateY(-50%);
+}
+*/
+
+.header
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.header:before
+{
+	margin-right: 5px;	
+	content: "";
+	width: 55px;
+	height: 1px;
+	background-color: #ff0000;
+}
+
+.header:after
+{
+	margin-left: 5px;
+	content: "";
+	width: 55px;
+	height: 1px;
+	background-color: #ff0000;
 }
 
 .second-screen-pricebg
@@ -320,15 +347,16 @@ header {
 
 .third-screen-header
 {
+	/*
 	font-weight: 600;
 	font-size: 40px;
 
 	position: relative;
 	text-transform:uppercase;
-	color: #000;
+	color: #000;*/
 	margin-bottom: 10px;
 }
-
+/*
 .third-screen-header:before
 {
 	content: "";
@@ -352,7 +380,7 @@ header {
 	right: -60px;
 	transform: translateY(-50%);
 }
-
+*/
 .third-screen-circles
 {
 	position: relative;
@@ -468,16 +496,16 @@ header {
 }
 
 .fourth-screen-header
-{
+{/*
 	font-weight: 600;
 	font-size: 40px;
 	text-align: center;
 	position: relative;
 	text-transform:uppercase;
-	color: #000;
+	color: #000;*/
 	margin-bottom: 90px;
 }
-
+/*
 .fourth-screen-header:before
 {
 	content: "";
@@ -501,7 +529,7 @@ header {
 	right: 290px;
 	transform: translateY(-50%);
 }
-
+*/
 .forth-screen-catalog
 {
 	display: flex;
@@ -549,8 +577,6 @@ header {
 .fourth-screen-center-suitcase
 {
 	position: relative;
-	margin-bottom: -40px;
-	z-index: -1;
 }
 
 .fourth-screen-center-img
@@ -572,7 +598,7 @@ header {
 {
 	align-self: flex-start;
 	margin-left: -50px;
-	margin-top: 40px;
+	margin-top: 55px;
 }
 
 .fourth-screen-sizes
@@ -611,9 +637,9 @@ header {
 
 .fourth-screen-price
 {
-	margin-left: -110px;
+	margin-left: -76px;
 	position: relative;
-	margin-bottom: 55px;
+	margin-bottom: 35px;
 }
 
 .fourth-screen-price img
@@ -633,7 +659,7 @@ header {
 
 .new-price
 {
-	padding-top: 60px;
+	padding-top: 68px;
 	font-weight: 600;
 	font-size: 48px;
 	color: #ff0000;
@@ -648,7 +674,7 @@ header {
 
 .fourth-screen-stock
 {
-	margin-left: -110px;
+	margin-left: -94px;
 	position: relative;
 }
 
@@ -656,7 +682,7 @@ header {
 {
 	position: absolute;
 	top: 85px;
-    left: 65px;
+    left: 62px;
 	font-size: 36px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -667,8 +693,8 @@ header {
 {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: -47px;
-    margin-right: 16px;
+	margin-top: -42px;
+    margin-right: 25px;
 }
 
 .timer-wrapper
@@ -696,7 +722,7 @@ header {
 	flex-wrap: wrap;
 	position: absolute;
 	bottom: 15px;
-    left: 305px;
+    left: 334px;
 }
 
 .case-color
@@ -846,6 +872,11 @@ header {
 	opacity: 0.7;
 }
 
+.input-phone::focus
+{
+	outline: none;
+}
+
 .submit
 {
 	margin-left: 20px;
@@ -859,6 +890,7 @@ header {
 	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+	cursor: pointer;
 }
 
 .fifth-screen
@@ -867,7 +899,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: top left;
 	padding-bottom: 45px;
-	margin-bottom: 88px;
+	margin-bottom: 90px;
 }
 
 .fifth-screen-header
@@ -875,21 +907,22 @@ header {
 	padding-top: 75px;
 	font-size: 277px;
 	font-weight: 600;
-	color: #66cccc;
+	color: #52e4d8;
 	margin-bottom: 95px;
 	letter-spacing: 12px;
+	-webkit-mask-image: -webkit-gradient(linear, left -60, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 .fifth-screen-title
 {
-	position: relative;
+	margin-bottom: 43px;
+	/*position: relative;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 40px;
-	margin-bottom: 43px;
+	font-size: 40px;*/
 }
-
+/*
 .fifth-screen-title:before
 {
 	content: "";
@@ -913,7 +946,7 @@ header {
     right: 225px;
     transform: translateY(-50%);
 }
-
+*/
 .fifth-screen-contnent
 {
 	display: flex;
@@ -946,4 +979,217 @@ header {
 .fifth-screen-right-content
 {
 	margin-top: 33px;
+}
+
+.sixth-screen
+{
+	background-image: url(background-img/sixth-screen/bg.png);
+	background-repeat: no-repeat;
+	background-position: left -180px;
+	padding-bottom: 197px;
+}
+
+.sixth-screen-content
+{
+	margin-top: 67px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.sixth-screen-left-content
+{
+	width: 600px;
+}
+
+.sixth-screen-left-content .slick-next
+{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 13.5px 0 13.5px 14px;
+	border-color: transparent transparent transparent #000000;
+	font-size: 0;
+	position: absolute;
+	right: 103px;
+	bottom: -49px;
+}
+
+.sixth-screen-left-content .slick-prev
+{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 13.5px 14px 13.5px 0;
+	border-color: transparent #000000 transparent transparent;
+	font-size: 0;
+	position: absolute;
+	left: 103px;
+	bottom: -49px;
+}
+
+.sixth-screen-left-content .slick-dots
+{
+	position: absolute;
+	width: 318px;
+	display: flex;
+	justify-content: space-between;
+	bottom: -38px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sixth-screen-left-content .slick-dots li
+{
+	background-color: #ff0000;
+	border: 1px solid transparent;
+	width: 68px;
+	height: 5px;
+}
+
+.sixth-screen-left-content .slick-dots .slick-active
+{
+	border: 1px solid #000;
+	background-color: #fff;
+}
+
+.sixth-screen-right-content
+{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.sixth-right-content-header
+{
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 27px;
+	width: 340px;
+	text-align: center;
+}
+
+.sixth-screen-header-sizes
+{
+	display: flex;
+	width: 340px;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+
+.sixth-screen-right-size
+{
+	padding-top: 18px;
+	padding-right: 29px;
+	padding-bottom: 18px;
+	padding-left: 26px;
+	border: 2px solid #ff3333;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 600;
+	color: #000;
+}
+
+.sixth-screen-right-active
+{
+	background-color: #ff3333;
+	color: #fff;
+}
+
+.sixth-screen-colors
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 510px;
+	position: absolute;
+	bottom: 85px;
+	right: 0;
+}
+
+.sixth-case-color
+{
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.sixth-screen-form
+{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: -49px;
+	right: 0;
+}
+
+.sixth-form-order
+{
+	padding: 17px 25px;
+	border: 1px solid #ff3333;
+	box-shadow: 10px -10px 5px -7px rgba(204,204,204,0.75);
+	display: flex;
+}
+
+.seven-screen
+{
+	margin-top: -32px;
+	padding-bottom: 167px;
+	background-image: url(background-img/seven-screen/bg.png);
+	background-repeat: no-repeat;
+	background-position: right 325px;
+}
+
+.seven-screen-header
+{
+	font-weight: 600;
+	font-size: 283px;
+	color: #52e4d8;
+	margin-bottom: 165px;
+	letter-spacing: 17px;
+}
+
+.seven-screen-title
+{
+	font-size: 48px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 75px;
+}
+
+.seven-screen-text
+{
+	font-size: 48px;
+	letter-spacing: 3px;
+}
+
+.eight-screen-header
+{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	margin-bottom: 75px;
+}
+
+.eight-screen-header:before
+{
+	margin-right: 5px;	
+	content: "";
+	width: 55px;
+	height: 1px;
+	background-color: #ff0000;
+}
+
+.eight-screen-header:after
+{
+	margin-left: 5px;	
+	content: "";
+	width: 55px;
+	height: 1px;
+	background-color: #ff0000;
 }
