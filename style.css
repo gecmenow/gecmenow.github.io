@@ -1013,6 +1013,7 @@ header {
 	position: absolute;
 	right: 103px;
 	bottom: -49px;
+	cursor: pointer;
 }
 
 .sixth-screen-left-content .slick-prev
@@ -1026,6 +1027,7 @@ header {
 	position: absolute;
 	left: 103px;
 	bottom: -49px;
+	cursor: pointer;
 }
 
 .sixth-screen-left-content .slick-dots
@@ -1045,6 +1047,7 @@ header {
 	border: 1px solid transparent;
 	width: 68px;
 	height: 5px;
+	cursor: pointer;
 }
 
 .sixth-screen-left-content .slick-dots .slick-active
@@ -1167,7 +1170,6 @@ header {
 
 .eight-screen
 {
-	
 	background-image: url(background-img/eight-screen/bg.png);
 	background-repeat: no-repeat;
 	background-position: center 106px;
@@ -1326,6 +1328,7 @@ header {
 	position: absolute;
 	right: 82px;
 	bottom: -50px;
+	cursor: pointer;
 }
 
 .nine-screen-content .sixth-screen-left-content .slick-prev
@@ -1339,6 +1342,7 @@ header {
 	position: absolute;
 	left: 82px;
 	bottom: -50px;
+	cursor: pointer;
 }
 
 .nine-screen-content .sixth-screen-left-content .slick-dots
@@ -1357,6 +1361,14 @@ header {
 	padding: 0;
 }
 
+.ten-screen
+{
+	background-image: url(background-img/ten-screen/bg.png);
+	background-repeat: no-repeat;
+	background-position: right 100px;
+	padding-bottom: 60px;
+}
+
 .ten-screen-header
 {
 	display: flex;
@@ -1365,7 +1377,7 @@ header {
 	justify-content: center;
 	font-weight: 600;
 	font-size: 40px;
-	margin-bottom: 70px;
+	margin-bottom: 121px;
 }
 
 .ten-screen-header:before
@@ -1385,3 +1397,104 @@ header {
 	background-color: #ff0000;
 	margin-left: 5px;
 }
+
+.ten-sceen-contnent
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.ten-sceen-contnent .slick-slide,
+.ten-screen-slider-for .slick-slide
+{
+	padding: 0;
+}
+
+.ten-screen-slider-for 
+{
+	padding: 0 15px;
+}
+
+.ten-screen-slider-for .slick-slide
+{
+	width: 1000px;
+	height: 491px;
+}
+
+.ten-screen-slider-for img
+{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ten-screen-slider-nav .slick-slide img,
+.ten-screen-slider-for img
+{
+	max-width: 100%;
+}
+
+.ten-screen-slider-nav img
+{
+	cursor: pointer;
+}
+
+.ten-screen-slider-nav .slick-slide
+{	
+	padding: 30px 15px 0 15px;
+}
+
+.ten-screen-slider-for .slick-arrow
+{
+	position: absolute;
+	border: solid #000;
+	border-width: 0 8px 8px 0;
+	display: inline-block;
+	padding: 15px;
+	top: 50%;
+	cursor: pointer;
+}
+
+.ten-screen-slider-for .slick-prev
+{
+  	transform: translateY(-50%) rotate(135deg);
+  	-webkit-transform: translateY(-50%) rotate(135deg);
+  	left: -50px;
+}
+
+.ten-screen-slider-for .slick-next
+{
+	transform: translateY(-50%) rotate(-45deg);
+  	-webkit-transform: translateY(-50%) rotate(-45deg);
+  	right: -50px;
+}
+
+.ten-screen-slider-nav .slick-dots
+{
+	position: absolute;
+	width: 570px;
+	display: flex;
+	justify-content: space-between;
+	bottom: -37px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.ten-screen-slider-nav .slick-dots li
+{
+	background-color: #ff0000;
+	border: 1px solid transparent;
+	width: 68px;
+	height: 5px;
+	cursor: pointer;
+}
+
+.ten-screen-slider-nav .slick-dots .slick-active
+{
+	border: 1px solid #000;
+	background-color: #fff;
+}
+
