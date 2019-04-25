@@ -43,7 +43,6 @@ $(document).ready(function(){
 	styleChanging.click(function()
 	{
 		$('.slick-slide').removeClass('center-active');
-		console.log('huj');
 		document.getElementsByClassName('slick-active')[3].classList.add('center-active');
 	});
 
