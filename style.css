@@ -32,7 +32,7 @@ header {
   	background-repeat: no-repeat;
   	overflow-x: hidden;
   	overflow-y: hidden;
-  	margin-bottom: 65px;
+  	background-image: url(background-img/first-back-img.png);
 } 	
 
 .wrapper
@@ -58,25 +58,16 @@ header {
     font-size: 24px;
 }
 
-@media (min-width: 480px) {
-	.navigation {
-    flex-direction: row;
-	}
-}
-
-.navigation-link__active
+.navigation li:hover
 {
 	border-bottom: 1px solid #e21440;
 }
 
-.navigation li 
+.navigation li
 {
 	padding-bottom: 10px;
-}
-
-.navigation li:nth-child(n+2)
-{
-	margin-left: 45px;
+	border-bottom: 1px solid transparent;
+	transition: .5s easy;
 }
 
 .header-logo
@@ -116,7 +107,6 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 60px;
 	font-weight: 600;
 	text-transform:uppercase;
 	color: #fff;
@@ -145,22 +135,9 @@ header {
 .product-subtitle
 {
 	color: #e21440;
-	font-size: 36px;
 	font-weight: 600;
 	z-index: 1;
-	margin-bottom: 480px;
 }
-/*
-.header-bottom
-{
-	color: #52e4d8;
-	font-size: 352px;
-	font-weight: 600;
-	text-align: center;
-	
-	-webkit-mask-image: -webkit-gradient(linear, left 125, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-}
-*/
 
 .header-bottom
 {
@@ -170,7 +147,6 @@ header {
 
 .header-suitcase
 {
-	position: absolute;
 	bottom: 10px;
 	right: -350px;
 }
@@ -178,19 +154,14 @@ header {
 .header-bottom-title
 {
 	color: #52e4d8;
-	font-size: 352px;
 	font-weight: 600;
-	text-align: center;	
-	letter-spacing: 40px;
-	-webkit-mask-image: -webkit-gradient(linear, left 125, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+	text-align: center;
 }
 
 .second-screen
 {
 	background-image: url(background-img/second-screen-bg.png);
 	background-repeat: no-repeat;
-	background-position: right 220px;
-
 	position: relative;
 }
 
@@ -205,41 +176,10 @@ header {
 }
 
 .second-screen-header
-{/*
-	font-weight: 600;
-	font-size: 40px;
-
-	position: relative;
-	text-transform:uppercase;
-	color: #000;*/
+{
 	z-index: 1;
-	margin-bottom: 115px;
+	
 }
-/*
-.second-screen-header:before
-{
-	content: "";
-	position: absolute;
-	width: 55px;
-	height: 1px;
-	background-color: #e21440;
-	top: 50%;
-	left: -60px;
-	transform: translateY(-50%);
-}
-
-.second-screen-header:after
-{
-	content: "";
-	position: absolute;
-	width: 55px;
-	height: 1px;
-	background-color: #e21440;
-	top: 50%;
-	right: -60px;
-	transform: translateY(-50%);
-}
-*/
 
 .header
 {
@@ -247,7 +187,6 @@ header {
 	align-items: center;
 	justify-content: center;
 	text-transform: uppercase;
-	font-size: 40px;
 	font-weight: 600;
 }
 
@@ -273,19 +212,13 @@ header {
 {
 	display: flex;
 	justify-content:center;
-	flex-direction: column;
 	align-items: center;
-
-	position: relative;
 }
 
 .second-screen-price
 {
 	position: absolute;
-
-	font-size: 53px;
 	font-weight: 600;
-	letter-spacing: 4px;
 	color:#fff;
 	z-index: 1;
 }
@@ -297,15 +230,10 @@ header {
 
 .second-screen-leftarrow-text
 {
-	font-size: 33px;
 	font-weight: 600;
-	letter-spacing: 1px;
-
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
 	transform:rotate(180deg);
-
-	padding-right: 30px;
 }
 
 .second-screen-leftarrow
@@ -315,13 +243,8 @@ header {
 
 .second-screen-bottomarrow-text
 {
-	font-size: 32px;
 	font-weight: 600;
-	letter-spacing: 1px;
-
 	text-align: center;
-
-	margin-bottom: 175px;
 }
 
 .second-screen-girl
@@ -347,40 +270,9 @@ header {
 
 .third-screen-header
 {
-	/*
-	font-weight: 600;
-	font-size: 40px;
-
-	position: relative;
-	text-transform:uppercase;
-	color: #000;*/
 	margin-bottom: 10px;
 }
-/*
-.third-screen-header:before
-{
-	content: "";
-	position: absolute;
-	width: 55px;
-	height: 1px;
-	background-color: #e21440;
-	top: 50%;
-	left: -60px;
-	transform: translateY(-50%);
-}
 
-.third-screen-header:after
-{
-	content: "";
-	position: absolute;
-	width: 55px;
-	height: 1px;
-	background-color: #e21440;
-	top: 50%;
-	right: -60px;
-	transform: translateY(-50%);
-}
-*/
 .third-screen-circles
 {
 	position: relative;
@@ -492,49 +384,12 @@ header {
 	justify-content: center;
 	flex-wrap: wrap;
 	position: relative;
-	margin-bottom: 10px;
 }
 
-.fourth-screen-header
-{/*
-	font-weight: 600;
-	font-size: 40px;
-	text-align: center;
-	position: relative;
-	text-transform:uppercase;
-	color: #000;*/
-	margin-bottom: 90px;
-}
-/*
-.fourth-screen-header:before
-{
-	content: "";
-	position: absolute;
-	width: 55px;
-	height: 1px;
-	background-color: #e21440;
-	top: 50%;
-	left: 290px;
-	transform: translateY(-50%);
-}
-
-.fourth-screen-header:after
-{
-	content: "";
-	position: absolute;
-	width: 55px;
-	height: 1px;
-	background-color: #e21440;
-	top: 50%;
-	right: 290px;
-	transform: translateY(-50%);
-}
-*/
 .forth-screen-catalog
 {
 	display: flex;
 	flex-direction: column;
-	margin-right: 40px;
 }
 
 .left-charecter
@@ -545,10 +400,7 @@ header {
 
 .left-charecter-text-top
 {
-	top: 22px;
-    left: 95px;
     transform:translateX(-50%);
-    font-size: 36px;
     position: absolute;
     text-transform:uppercase;
 }
@@ -556,17 +408,12 @@ header {
 .left-charecter-text-bottom
 {
 	text-transform: uppercase;
-	font-size: 29px;
 	text-align: center;
-    padding-right: 45px;
-    margin-top: -62px;
 }
 
 .left-main-circle-icon
 {
 	position: absolute;
-	top: 62px;
-    right: 68px;
 }
 
 .fourth-screen
@@ -577,18 +424,16 @@ header {
 .fourth-screen-center-suitcase
 {
 	position: relative;
+	z-index: -1;
 }
 
 .fourth-screen-center-img
 {
 	position: absolute;
-	top: -49px;
-    left: 66px;
 }
 
 .fourth-screen-right-header
 {
-	font-size: 36px;
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 25px;
@@ -597,8 +442,6 @@ header {
 .fourth-screen-top-right
 {
 	align-self: flex-start;
-	margin-left: -50px;
-	margin-top: 55px;
 }
 
 .fourth-screen-sizes
@@ -606,11 +449,9 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-left: 65px;
-	margin-bottom: 60px;
 }
 
-.fourth-screen-right-size:nth-child(1)
+.fourth-screen-right-size.size-active
 {
 	font-size: 36px;
 	text-transform: uppercase;
@@ -623,7 +464,7 @@ header {
 	color: #fff;
 }
 
-.fourth-screen-right-size:nth-child(n+2)
+.fourth-screen-right-size
 {
 	font-size: 36px;
 	text-transform: uppercase;
@@ -633,11 +474,11 @@ header {
 	text-align: center;
 	line-height: 65px;
 	color: #000;
+	cursor: pointer;
 }
 
 .fourth-screen-price
 {
-	margin-left: -76px;
 	position: relative;
 	margin-bottom: 35px;
 }
@@ -661,7 +502,6 @@ header {
 {
 	padding-top: 68px;
 	font-weight: 600;
-	font-size: 48px;
 	color: #ff0000;
 	margin-bottom: 20px;
 }
@@ -674,16 +514,12 @@ header {
 
 .fourth-screen-stock
 {
-	margin-left: -94px;
 	position: relative;
 }
 
 .stock-text
 {
 	position: absolute;
-	top: 85px;
-    left: 62px;
-	font-size: 36px;
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #ff0000;
@@ -721,8 +557,39 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	position: absolute;
-	bottom: 15px;
-    left: 334px;
+}
+
+.case-color-container
+{
+	margin-left: 10px;
+	margin-top: 20px;
+	position: relative;
+	cursor: pointer;
+}
+
+.case-color-active
+{
+	position: absolute;
+	font-size: 22px; 
+	line-height: 55px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+
+.case-color-active:before
+{
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	border: 1px solid #ffcc99;
+	background-color: #fff;
+	z-index: -1;
+	border-radius: 50%;
+	top: -8px;
+    left: -8px;
 }
 
 .case-color
@@ -730,8 +597,6 @@ header {
 	width: 55px;
 	height: 55px;
 	border-radius: 50%;
-	margin-left: 10px;
-	margin-top: 20px;
 }
 
 .case-color-first
@@ -829,16 +694,22 @@ header {
 .case-color-ninteenth
 {
 	background-color: #000;
+	background-image: url(background-img/forth-screen/circle-airplane.png);
+	background-size: cover;
 }
 
 .case-color-twentieth
 {
 	background-color: #000;
+	background-image: url(background-img/forth-screen/circle-sheep.png);
+	background-size: cover;
 }
 
 .case-color-thwenty-first
 {
 	background-color: #000;
+	background-image: url(background-img/forth-screen/circle-airplane2.png);
+	background-size: cover;
 }
 
 .fourth-screen-form
@@ -904,59 +775,20 @@ header {
 
 .fifth-screen-header
 {
-	padding-top: 75px;
-	font-size: 277px;
 	font-weight: 600;
 	color: #52e4d8;
-	margin-bottom: 95px;
-	letter-spacing: 12px;
 	-webkit-mask-image: -webkit-gradient(linear, left -60, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 .fifth-screen-title
 {
 	margin-bottom: 43px;
-	/*position: relative;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 40px;*/
-}
-/*
-.fifth-screen-title:before
-{
-	content: "";
-    position: absolute;
-    width: 55px;
-    height: 1px;
-    background-color: #e21440;
-    top: 50%;
-    left: 225px;
-    transform: translateY(-50%);
 }
 
-.fifth-screen-title:after
-{
-	content: "";
-    position: absolute;
-    width: 55px;
-    height: 1px;
-    background-color: #e21440;
-    top: 50%;
-    right: 225px;
-    transform: translateY(-50%);
-}
-*/
 .fifth-screen-contnent
 {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.fifth-screen-left-content
-{
-	width: 470px;
-	margin-right: 30px;
 }
 
 .left-contnet
@@ -976,30 +808,17 @@ header {
   	-webkit-text-fill-color: black;
 }
 
-.fifth-screen-right-content
-{
-	margin-top: 33px;
-}
-
 .sixth-screen
 {
 	background-image: url(background-img/sixth-screen/bg.png);
 	background-repeat: no-repeat;
 	background-position: left -180px;
-	padding-bottom: 197px;
 }
 
 .sixth-screen-content
 {
-	margin-top: 67px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.sixth-screen-left-content
-{
-	width: 600px;
 }
 
 .sixth-screen-left-content .slick-next
@@ -1012,7 +831,7 @@ header {
 	font-size: 0;
 	position: absolute;
 	right: 103px;
-	bottom: -49px;
+	bottom: 50px;
 	cursor: pointer;
 }
 
@@ -1026,17 +845,15 @@ header {
 	font-size: 0;
 	position: absolute;
 	left: 103px;
-	bottom: -49px;
+	bottom: 50px;
 	cursor: pointer;
 }
 
 .sixth-screen-left-content .slick-dots
 {
 	position: absolute;
-	width: 318px;
 	display: flex;
 	justify-content: space-between;
-	bottom: -38px;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -1045,7 +862,6 @@ header {
 {
 	background-color: #ff0000;
 	border: 1px solid transparent;
-	width: 68px;
 	height: 5px;
 	cursor: pointer;
 }
@@ -1069,24 +885,16 @@ header {
 	font-size: 36px;
 	font-weight: 600;
 	margin-bottom: 27px;
-	width: 340px;
 	text-align: center;
 }
 
 .sixth-screen-header-sizes
 {
 	display: flex;
-	width: 340px;
-	justify-content: space-between;
-	margin-bottom: 70px;
 }
 
 .sixth-screen-right-size
 {
-	padding-top: 18px;
-	padding-right: 29px;
-	padding-bottom: 18px;
-	padding-left: 26px;
 	border: 2px solid #ff3333;
 	text-transform: uppercase;
 	font-size: 36px;
@@ -1104,10 +912,17 @@ header {
 {
 	display: flex;
 	flex-wrap: wrap;
-	width: 510px;
 	position: absolute;
-	bottom: 85px;
-	right: 0;
+}
+
+.sixth-screen-colors .case-color-container:nth-child(1)
+{
+	margin-left: 205px;
+}
+
+.sixth-screen-colors .case-color-container
+{
+	margin-top: 8px;
 }
 
 .sixth-case-color
@@ -1124,7 +939,7 @@ header {
 	display: flex;
 	justify-content: center;
 	position: absolute;
-	bottom: -49px;
+	bottom: 41px;
 	right: 0;
 }
 
@@ -1138,8 +953,6 @@ header {
 
 .seven-screen
 {
-	margin-top: -32px;
-	padding-bottom: 167px;
 	background-image: url(background-img/seven-screen/bg.png);
 	background-repeat: no-repeat;
 	background-position: right 325px;
@@ -1148,23 +961,17 @@ header {
 .seven-screen-header
 {
 	font-weight: 600;
-	font-size: 283px;
 	color: #52e4d8;
-	margin-bottom: 165px;
-	letter-spacing: 17px;
 }
 
 .seven-screen-title
 {
-	font-size: 48px;
 	font-weight: 600;
 	text-transform: uppercase;
-	margin-bottom: 75px;
 }
 
 .seven-screen-text
 {
-	font-size: 48px;
 	letter-spacing: 3px;
 }
 
@@ -1172,19 +979,14 @@ header {
 {
 	background-image: url(background-img/eight-screen/bg.png);
 	background-repeat: no-repeat;
-	background-position: center 106px;
-	margin-bottom: 93px;
-	padding-bottom: 62px;
 }
 
 .eight-screen-header
 {
 	text-transform: uppercase;
-	font-size: 40px;
 	font-weight: 600;
 	display: flex;
 	align-items: center;
-	margin-bottom: 143px;
 	justify-content: center;
 }
 
@@ -1219,8 +1021,12 @@ header {
 	margin: 0 auto;
 }
 
+.sixth-screen-content .slick-slide
+{
+	padding: 0 0 90px 0;
+}
+
 .slick-slide  {
-	padding: 90px 0;
   	transition: transform .3s cubic-bezier(.4,0,.2,1);
 }
 
@@ -1244,7 +1050,6 @@ header {
 {
   	transform: translateY(-50%) rotate(135deg);
   	-webkit-transform: translateY(-50%) rotate(135deg);
-  	left: -25px;
 }
 
 .center .slick-next
@@ -1271,8 +1076,6 @@ header {
 	background-image: url(background-img/nine-screen/bg.png);
 	background-repeat: no-repeat;
 	background-position: left 145px;
-	padding-bottom: 40px;
-	margin-bottom: 138px;
 }
 
 .nine-screen-header
@@ -1309,12 +1112,6 @@ header {
 .nine-screen-content
 {
 	display: flex;
-	justify-content: flex-end;
-}
-
-.nine-screen-content .sixth-screen-left-content
-{
-	width: 775px;
 }
 
 .nine-screen-content .sixth-screen-left-content .slick-next
@@ -1327,7 +1124,6 @@ header {
 	font-size: 0;
 	position: absolute;
 	right: 82px;
-	bottom: -50px;
 	cursor: pointer;
 }
 
@@ -1341,7 +1137,6 @@ header {
 	font-size: 0;
 	position: absolute;
 	left: 82px;
-	bottom: -50px;
 	cursor: pointer;
 }
 
@@ -1351,7 +1146,6 @@ header {
 	width: 566px;
 	display: flex;
 	justify-content: space-between;
-	bottom: -40px;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -1365,7 +1159,6 @@ header {
 {
 	background-image: url(background-img/ten-screen/bg.png), url(background-img/ten-screen/bg2.png);
 	background-repeat: no-repeat;
-	background-position: right 100px, left 770px;
 	position: relative;
 }
 
@@ -1377,7 +1170,6 @@ header {
 	justify-content: center;
 	font-weight: 600;
 	font-size: 40px;
-	margin-bottom: 121px;
 }
 
 .ten-screen-header:before
@@ -1398,13 +1190,7 @@ header {
 	margin-left: 5px;
 }
 
-.ten-sceen-contnent
-{
-	width: 1000px;
-	margin: 0 auto;
-}
-
-.ten-sceen-contnent .slick-slide,
+.ten-screen-contnent .slick-slide,
 .ten-screen-slider-for .slick-slide
 {
 	padding: 0;
@@ -1418,7 +1204,6 @@ header {
 .ten-screen-slider-for .slick-slide
 {
 	width: 1000px;
-	height: 491px;
 }
 
 .ten-screen-slider-for img
@@ -1429,11 +1214,6 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-}
-
-.ten-screen-slider-nav
-{
-	margin-bottom: 282px;
 }
 
 .ten-screen-slider-nav .slick-slide img,
@@ -1480,7 +1260,6 @@ header {
 .ten-screen-slider-nav .slick-dots
 {
 	position: absolute;
-	width: 570px;
 	display: flex;
 	justify-content: space-between;
 	bottom: -37px;
@@ -1492,7 +1271,6 @@ header {
 {
 	background-color: #ff0000;
 	border: 1px solid transparent;
-	width: 68px;
 	height: 5px;
 	cursor: pointer;
 }
@@ -1506,20 +1284,18 @@ header {
 .about
 {
 	display: flex;
-	padding-bottom: 155px;
 }
 
 .about-delivering
 {
-	width: 429px;
 	height: 442px;
 	background-image: url(background-img/ten-screen/image1.png);
 	background-repeat: no-repeat;
+	background-color: #000;
 }
 
 .about-header
 {
-	padding-top: 80px;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -1527,7 +1303,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin-bottom: 62px;
 }
 
 .about-header:after
@@ -1544,7 +1319,7 @@ header {
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #fff;
-	max-width: 379px;
+	max-width: 378px;
 	margin: 0 auto;
 	line-height: 2;
 }
@@ -1552,12 +1327,10 @@ header {
 .about-store
 {
 	left: 500px;
-	width: 429px;
 	height: 442px;
 	background-image: url(background-img/ten-screen/image2.png);
 	background-repeat: no-repeat;
-	margin-top: 225px;
-	margin-left: -17px;
+	background-color: #000;
 }
 
 .store-content
@@ -1565,9 +1338,10 @@ header {
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 14px;
-	max-width: 380px;
+	max-width: 378px;
 	margin: 0 auto;
 	line-height: 2;
+	letter-spacing: 0.68px;
 }
 
 .ten-screen-men
@@ -1575,6 +1349,7 @@ header {
 	position: absolute;
 	right: 0;
 	bottom: 10px;
+	z-index: -1;
 }
 
 footer
